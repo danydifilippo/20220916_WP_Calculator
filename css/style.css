@@ -1,8 +1,22 @@
 
+body {
+    background-image: url(../img/accounting.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
 .container {
-    margin: auto;
-    margin-top: 6em;
-    width: 390px;
+    margin-top: 8em;
+    width: 430px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 12px 12px 20px gray, -12px -12px 20px whitesmoke;
@@ -10,39 +24,75 @@
     flex-direction: column;
     gap: 4px;
     align-items: center;
+    background: linear-gradient(35deg, #2d4968, #1b243b);
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 200;
+    position: relative;
 }
 
-.buttons {
-    
-}
-
-.btn {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4em;
-    width: 93.9px;
-    background-color: rgb(255, 214, 239);
-    border-radius: 10%;
+.btn, .btn_oper {
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
     margin-top: 4px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 2em;
+    padding-top: 0;
+    background-color: #1c2c4a;
+    border: 0;
+}
+
+.btn_oper {
+    background-color: #f6599e;
 }
 
 #display {
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    width: 97%;
     font-size: 4em;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 200;
+    background-color: #2d4968;
+    color: white;
 }
 
 #restart, #equal {
-    background-color: #2077aa;
     color: white;
     border-radius: 7%;
 }
 
  
 #equal {
-    width: 192px;
+    width: 130px;
+    background-color: #fea51e;
 }
 
 #restart {
     width: 290px;
 }
 
+#prevDisplay {
+    position: absolute;
+    height: 2em;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2em;
+    left: 0.9em;
+    color: white;
+    font-weight: 200;
+}
+
+#disOper {
+    position: absolute;
+    height: 5em;
+    width: 20px;
+    border: 0;
+    font-size: 1.2em;
+    right: 0.9em;
+    color: black;
+    font-weight: 200;
+    background-color: transparent;
+}

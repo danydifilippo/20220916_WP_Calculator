@@ -5,40 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="Calcolatrice con Javascript" content="Calculator in Javascript" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
     <title>La mia prima calcolatrice con Javascript</title>
   </head>
 
   <body>
     <main>
       <div class="container">
-        <input id="display" type="text" placeholder="0" />
+        <div>
+          <input id="prevDisplay" type="text" />
+          <input id="display" type="text" placeholder="0" />
+          <input id="disOper" type="text" />
+        </div>
         <div class="buttons">
           <div class="row1">
-            <button class="btn" onclick="restartAC()" id="restart">AC</button>
-            <button class="btn" onclick="n(this.id)" id="/">&divide;</button>
-          </div>
-          <div class="row2">
             <button class="btn" onclick="n(this.id)" id="7">7</button>
             <button class="btn" onclick="n(this.id)" id="8">8</button>
             <button class="btn" onclick="n(this.id)" id="9">9</button>
-            <button class="btn" onclick="n(this.id)" id="*">x</button>
+            <button class="btn_oper" onclick="n(this.id)" id="-">-</button>
+            <button class="btn_oper" onclick="n(this.id)" id="/">&divide;</button>
           </div>
-          <div class="row3">
+          <div class="row2">
             <button class="btn" onclick="n(this.id)" id="4">4</button>
             <button class="btn" onclick="n(this.id)" id="5">5</button>
             <button class="btn" onclick="n(this.id)" id="6">6</button>
-            <button class="btn" onclick="n(this.id)" id="-">-</button>
+            <button class="btn_oper" onclick="n(this.id)" id="+">+</button>
+            <button class="btn_oper" onclick="n(this.id)" id="*">x</button>
           </div>
-          <div class="row4">
+          <div class="row3">
             <button class="btn" onclick="n(this.id)" id="1">1</button>
             <button class="btn" onclick="n(this.id)" id="2">2</button>
             <button class="btn" onclick="n(this.id)" id="3">3</button>
-            <button class="btn" onclick="n(this.id)" id="+">+</button>
+            <button class="btn_oper" onclick="perc(this.id)" id="%">%</button>
+            <button class="btn" onclick="deleteDel()">DEL</button>
           </div>
-          <div class="row5">
+          <div class="row4">
             <button class="btn" onclick="n(this.id)" id="0">0</button>
-            <button class="btn" onclick="n(this.id)" id=".">,</button>
-            <button class="btn" onclick="operation()" id="equal">=</button>
+            <button class="btn" onclick="restartAC()">C</button>
+            <button class="btn" onclick="n(this.id)" id=".">.</button>
+            <button class="btn" onclick="operation_()" id="equal">=</button>
           </div>
         </div>
       </div>
