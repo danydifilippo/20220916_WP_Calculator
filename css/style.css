@@ -16,13 +16,13 @@ main {
 
 .container {
     margin-top: 8em;
-    width: 430px;
+    width: 400px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 12px 12px 20px gray, -12px -12px 20px whitesmoke;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 10px;
     align-items: center;
     background: linear-gradient(35deg, #2d4968, #1b243b);
     text-align: center;
@@ -32,13 +32,13 @@ main {
 }
 
 .btn, .btn_oper {
-    width: 80px;
+    width: 65px;
     height: 50px;
     border-radius: 50%;
-    margin-top: 4px;
+    margin: 7px 6px;
     font-family: 'Cairo', sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     padding-bottom: 2em;
     padding-top: 0;
@@ -52,22 +52,17 @@ main {
 
 #display {
     width: 97%;
-    font-size: 4em;
+    font-size: 3.5em;
     font-family: 'Cairo', sans-serif;
     font-weight: 200;
     background-color: #2d4968;
     color: white;
 }
 
-#restart, #equal {
-    color: white;
-    border-radius: 7%;
-}
-
- 
 #equal {
-    width: 130px;
+    width: 137px;
     background-color: #fea51e;
+    border-radius: 7%;
 }
 
 #restart {
@@ -90,9 +85,14 @@ main {
     height: 5em;
     width: 20px;
     border: 0;
-    font-size: 1.2em;
+    font-size: 1.8em;
     right: 0.9em;
     color: black;
     font-weight: 200;
     background-color: transparent;
+    color: white;
+}
+
+#Delete, #Restart {
+    color: rgb(42, 234, 67);
 }

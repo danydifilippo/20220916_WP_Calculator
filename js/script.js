@@ -38,4 +38,6 @@ function perc(dato) {
  document.getElementById('disOper').value=''
 }
 
-
+function deleteDel() {
+    document.getElementById('display').value= document.getElementById('display').value.slice(0,-1);
+ }

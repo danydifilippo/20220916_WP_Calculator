@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="Calcolatrice con Javascript" content="Calculator in Javascript" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -39,17 +39,17 @@
             <button class="btn" onclick="n(this.id)" id="2">2</button>
             <button class="btn" onclick="n(this.id)" id="3">3</button>
             <button class="btn_oper" onclick="perc(this.id)" id="%">%</button>
-            <button class="btn" onclick="deleteDel()">DEL</button>
+            <button class="btn" onclick="deleteDel()" id="Delete">DEL</button>
           </div>
           <div class="row4">
             <button class="btn" onclick="n(this.id)" id="0">0</button>
-            <button class="btn" onclick="restartAC()">C</button>
+            <button class="btn" onclick="restartAC()" id="Restart">C</button>
             <button class="btn" onclick="n(this.id)" id=".">.</button>
             <button class="btn" onclick="operation_()" id="equal">=</button>
           </div>
         </div>
       </div>
     </main>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
